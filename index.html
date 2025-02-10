@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The NPC Philosophy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        font-family: "Space Mono", monospace;
+        background-color: #0f172a;
+        background-image: radial-gradient(
+            circle at 20px 20px,
+            #1e293b 2px,
+            transparent 0
+          ),
+          radial-gradient(circle at 40px 40px, #1e293b 2px, transparent 0);
+        background-size: 40px 40px;
+      }
+      .glow-hover:hover {
+        box-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+        transform: translateY(-2px);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="text-gray-300 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-16">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-400">
+          The NPN Nation
+        </h1>
+        <p class="text-xl text-gray-400">
+          Winning at life without playing The Game
+        </p>
+        <br />
+        <p class="text-xl text-gray-400">
+          CA : AjwfA8RLLCmz6dmaKmtxYHm8LfNNbXFaAkGKSe9Cpump
+        </p>
+        <div class="mt-8">
+          <img
+            src="npcnation.jpeg"
+            alt="Pixel art gaming scene"
+            class="rounded-xl shadow-2xl mx-auto max-w-full h-auto"
+            height="420"
+            width="420"
+          />
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Core Philosophy Cards -->
+        <div class="col-span-1 md:col-span-2 lg:col-span-3 mb-8">
+          <div class="bg-slate-800/50 p-6 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 text-blue-400">
+              Core Philosophy
+            </h2>
+            <p class="text-gray-300">
+              Winning at life without "playing the game" means opting out of
+              conventional success metrics—status, wealth, competition—and
+              finding alternative ways to live meaningfully.
+            </p>
+          </div>
+        </div>
+
+        <!-- Strategy Cards -->
+        <div class="card-hover bg-slate-800/50 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">
+            <i class="bi bi-bullseye"></i> Define Your Own Success
+          </h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Choose your own values over external validation</li>
+            <li>Prioritize personal fulfillment</li>
+            <li>Create your own metrics for success</li>
+          </ul>
+        </div>
+
+        <div class="card-hover bg-slate-800/50 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">
+            <i class="bi bi-gear"></i> System Independence
+          </h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Embrace minimalism and frugality</li>
+            <li>Develop passive income streams</li>
+            <li>Learn self-sufficiency skills</li>
+          </ul>
+        </div>
+
+        <div class="card-hover bg-slate-800/50 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">
+            <i class="bi bi-peace"></i> Low-Stress Living
+          </h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Choose peaceful environments</li>
+            <li>Avoid toxic workplaces</li>
+            <li>Prioritize mental well-being</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Wisdom Generator -->
+      <div class="my-12 text-center">
+        <button
+          id="wisdomBtn"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 glow-hover"
+        >
+          Generate NPC Wisdom
+        </button>
+        <p id="wisdomText" class="mt-6 text-xl italic text-gray-400"></p>
+      </div>
+
+      <!-- Advanced Strategies -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div class="bg-slate-800/50 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">Advanced Tactics</h3>
+          <ul class="space-y-4">
+            <li>
+              <i class="bi bi-check2-circle"></i> Master the art of "quiet
+              quitting"
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i> Play niche games instead of
+              mass games
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i> Stay unplugged from the hype
+              cycle
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/50 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">Key Principles</h3>
+          <ul class="space-y-4">
+            <li><i class="bi bi-star"></i> Prioritize freedom over status</li>
+            <li><i class="bi bi-star"></i> Cultivate deep relationships</li>
+            <li>
+              <i class="bi bi-star"></i> Be unpredictable & uncontrollable
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-slate-800/50 text-center py-8 mt-12">
+      <div class="flex justify-center space-x-8">
+        <a
+          href="https://github.com/Schrodingrrr/NPN-Nation"
+          target="_blank"
+          class="text-gray-400 hover:text-blue-400 transition-colors"
+        >
+          <i class="bi bi-github text-2xl"></i>
+        </a>
+        <a
+          href="https://x.com/schrodingrrr"
+          target="_blank"
+          class="text-gray-400 hover:text-blue-400 transition-colors"
+        >
+          <i class="bi bi-twitter text-2xl"></i>
+        </a>
+        <a
+          href="https://pump.fun/coin/AjwfA8RLLCmz6dmaKmtxYHm8LfNNbXFaAkGKSe9Cpump"
+          target="_blank"
+          class="text-gray-400 hover:text-blue-400 transition-colors"
+        >
+          <i class="bi bi-capsule text-2xl"></i>
+        </a>
+      </div>
+      <p class="mt-4 text-gray-500">"What's your version of winning?"</p>
+    </footer>
+
+    <script>
+      const wisdom = [
+        "The true path to victory is choosing not to compete.",
+        "Success is measured by the peace in your heart, not the size of your wallet.",
+        "The best player is the one who knows when not to play.",
+        "Freedom comes from writing your own rules.",
+        "The greatest wealth is a life lived on your own terms.",
+        "Sometimes the winning move is not to play at all.",
+        "True power lies in being content with less.",
+        "The rat race is only for those who choose to be rats.",
+        "Your time is the only currency that truly matters.",
+        "Living simply is the ultimate sophistication.",
+      ];
+
+      const wisdomBtn = document.getElementById("wisdomBtn");
+      const wisdomText = document.getElementById("wisdomText");
+      let lastWisdom = "";
+
+      wisdomBtn.addEventListener("click", () => {
+        let newWisdom;
+        do {
+          newWisdom = wisdom[Math.floor(Math.random() * wisdom.length)];
+        } while (newWisdom === lastWisdom);
+
+        lastWisdom = newWisdom;
+        wisdomText.style.opacity = "0";
+
+        setTimeout(() => {
+          wisdomText.textContent = newWisdom;
+          wisdomText.style.opacity = "1";
+          wisdomText.style.transition = "opacity 0.5s ease-in";
+        }, 200);
+      });
+    </script>
+  </body>
+</html>
